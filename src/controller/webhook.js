@@ -26,7 +26,7 @@ const testWebhook = async(req, res) => {
     try{
         const webhooks = await Webhook.find();
         webhooks.forEach(webhook => {
-            const body = {"payload":[{"id": webhook._id, "token": webhook.token}]};
+            const body = {"payload":[{"id": webhook._id, "token": webhook.token, "message":"This is a webhook test"}]};
             const headers = {
                 'Content-Type': "application/json",
             }

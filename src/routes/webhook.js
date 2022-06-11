@@ -9,7 +9,8 @@ const { createWebhook, testWebhook } = require('../controller/webhook');
 router.post("/", createWebhook);
 
 /**
- * /api/webhook/test/.
+ * /api/webhook/test/
+ * Testing all the saved webhooks.
  */
 router.post("/test", testWebhook);
 
