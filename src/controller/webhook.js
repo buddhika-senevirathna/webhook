@@ -31,9 +31,14 @@ const testWebhook = async(req, res) => {
                 'Content-Type': "application/json",
             }
             const clientWebhookUrl = webhook.url;
-            axios.post(clientWebhookUrl, body, {headers});
+            axios.post(clientWebhookUrl, body, {headers}).then(response =>
+                {
+                    console.log("Successfully connect with:"+clientWebhookUrl);
+                }).catch(error =>{
+                    console.log("Error connecting:"+clientWebhookUrl+" , Error "+error);
+            });
         });
-        return res.status(200).json({"message":"Successfully called all the registered webhooks"});
+        res.status(200).json({"message":"Successfully called all the registered webhooks, Please check your log to see errors."});
     } catch (error) {
         console.log(error);
         res.status(500).json(error);
