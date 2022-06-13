@@ -9,7 +9,7 @@
  - MongoDB
 
 ## Installation
-- Download or clone this project
+- Download or clone this project (`https://github.com/buddhika-senevirathna/webhook`)
 - run `npm install`
 
 ### Create the .env file
