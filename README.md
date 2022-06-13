@@ -1,8 +1,8 @@
 # Simple Webhook Server
 ### Simple Web hook server using node js and express and axios
- This project will dicuss how to create a simple webhook server
-    - Register webhooks
-    - Send testing payload to the registered clients
+ This project will dicuss how to create a simple webhook server <br />
+  - Register webhooks <br />
+  - Send testing payload to the registered clients <br />
 
 ## Minimum Requirements
  - Node js
